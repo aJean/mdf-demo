@@ -1,0 +1,15 @@
+{
+  "name": "mdf-demo",
+  "version": "1.0.0",
+  "description": "mdfjs demo 集合",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "medgit@git.medlinker.com:dcm-frontend/mdf-demo.git"
+  },
+  "author": "qy",
+  "license": "MIT"
+}

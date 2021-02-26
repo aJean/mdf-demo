@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@@/*": [".tmp/*"],
+      "mdf": ["node_modules/mdfjs/packages/mdf"]
+    },
+    "lib": ["ES2020", "DOM"]
+  },
+  "include": [
+    ".tmp/**/*",
+    "src/**/*",
+    "config/**/*",
+    "plugins/**/*",
+    "typings.d.ts",
+    "cli/*",
+    "test.ts"
+  ]
+}
