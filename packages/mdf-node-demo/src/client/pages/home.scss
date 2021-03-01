@@ -1,0 +1,19 @@
+// 作为 css module 引入
+.home {
+  padding: 20px;
+  background: rgb(232, 214, 214);
+}
+
+.link {
+  border: 1px solid rgb(9, 24, 241);
+  border-radius: 6px;
+  height: 50px;
+  line-height: 50px;
+  color: red;
+  outline: none;
+}
+
+.link:hover {
+  background: rgb(172, 177, 245);
+  cursor: pointer;
+}

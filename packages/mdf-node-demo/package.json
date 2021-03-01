@@ -1,0 +1,53 @@
+{
+  "name": "mdf-node",
+  "mdf-mode": "node",
+  "version": "0.0.0",
+  "description": "mdfjs node container",
+  "main": "index.js",
+  "scripts": {
+    "mdf": "./node_modules/mdfjs/packages/mdf/bin/bootstrap.js",
+    "build": "MDF_ENV=prod yarn mdf build",
+    "dev": "MDF_ENV=dev yarn mdf dev",
+    "dev:server": "MDF_ENV=dev yarn mdf dev --node",
+    "lint": "yarn mdf lint --es"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "yarn mdf lint --es"
+    ],
+    "*.css": [
+      "yarn mdf lint --css"
+    ],
+    "*.scss": [
+      "yarn mdf lint --sass"
+    ],
+    "*.less": [
+      "yarn mdf lint --less"
+    ]
+  },
+  "repository": "medgit@git.medlinker.com:libs/mdf-node-demo.git",
+  "author": "qy",
+  "license": "MIT",
+  "dependencies": {
+    "@mdfjs/node": "0.0.0",
+    "@nestjs/common": "^7.6.7",
+    "@nestjs/core": "^7.6.7",
+    "@nestjs/platform-express": "^7.6.7",
+    "dayjs": "^1.10.4",
+    "react": "^17.0.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.6.3"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "core-js": "3.7.0",
+    "regenerator-runtime": "0.13.7",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.9"
+  }
+}
