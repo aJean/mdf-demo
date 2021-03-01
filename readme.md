@@ -1,6 +1,5 @@
 ### mdf 开发调试项目
-不同技术栈独立安装依赖，这个用于本地调试，有些路径与正式模式不太一样
-约定 demo 全部使用 yarn link 进行开发调试
+不同技术栈独立安装依赖，这个用于本地调试，有些路径与正式模式不太一样，约定 demo 全部使用 yarn link 进行开发调试！！
 
 ### 调试 react
 主要涉及到 mdfjs 和 @mdfjs/react 两个模块，其中 @mdfjs/react 是 react 方向的工程模块，同理 vue、node
