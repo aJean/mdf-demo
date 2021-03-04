@@ -9,7 +9,7 @@ import { whoami } from '@/qy.history';
 export default {
   // config 只覆盖应用插件
   beforeRender(...args: any) {
-    console.log('参数：', args);
+    console.log('参数哦：', args);
   },
 
   // wrap render function
