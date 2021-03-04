@@ -7,6 +7,6 @@ import React from 'react';
 export default {
   // config 只覆盖应用插件
   beforeRender(config: any) {
-    console.log('mdf-node-client', config);
+    console.log('hybrid 项目 -- client', config);
   },
 };

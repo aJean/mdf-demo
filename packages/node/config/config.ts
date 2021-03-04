@@ -11,9 +11,9 @@ export default defineConfig({
   },
 
   // fundamental | dva
-  framework: {
-    type: 'dva',
-    root: 'src/client'
+  project: {
+    type: 'hybrid',
+    framework: 'dva',
     // persist: true, 持久化 redux
   },
 
