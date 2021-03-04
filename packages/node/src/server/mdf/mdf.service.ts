@@ -12,10 +12,10 @@ export default class MdfService {
     return data
       .toPromise()
       .then((res) => {
-        return { code: 0, message: '完事了哇' };
+        return { code: 0, message: '完事了哇哦' };
       })
       .catch((e) => {
-        return { code: -1, message: '出错了哇' };
+        return { code: -1, message: '出错了哇哦' };
       });
   }
 }
