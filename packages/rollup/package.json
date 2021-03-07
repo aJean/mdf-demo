@@ -4,6 +4,10 @@
   "main": "lib/index.js",
   "author": "qy",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aJean/mdf-demo.git"
+  },
   "scripts": {
     "build": "rollup -c"
   },

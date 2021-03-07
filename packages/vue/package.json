@@ -11,6 +11,10 @@
   },
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aJean/mdf-demo.git"
+  },
   "dependencies": {
     "@mdfjs/vue": "0.0.0",
     "element3": "^0.0.35",

@@ -28,7 +28,7 @@
       "yarn mdf lint --less"
     ]
   },
-  "repository": "medgit@git.medlinker.com:libs/mdf-node-demo.git",
+  "repository": "https://github.com/aJean/mdf-demo.git",
   "author": "qy",
   "license": "MIT",
   "dependencies": {

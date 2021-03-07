@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "medgit@git.medlinker.com:dcm-frontend/mdf-demo.git"
+    "url": "https://github.com/aJean/mdf-demo.git"
   },
   "author": "qy",
   "license": "MIT"
