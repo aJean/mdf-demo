@@ -11,8 +11,10 @@ export default defineConfig({
 
   publicPath: '/',
 
-  framework: {
-    type: 'vuex',
+  // 工程配置
+  project: {
+    type: 'web',
+    framework: 'vuex',
   },
 
   devServer: {
