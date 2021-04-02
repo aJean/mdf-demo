@@ -16,7 +16,7 @@ const Home = function (props: Props) {
   const { name, money, beauty, dispatch } = props;
 
   // 触发运行时插件的执行
-  useEffect(function() {
+  useEffect(function () {
     plugin.invoke({
       key: 'mdfInfo',
       type: PluginType.event,
@@ -40,7 +40,9 @@ const Home = function (props: Props) {
       <h2>mdf-react 测试代理</h2>
       <div>
         <Link to="/foo">跳转到 foo 页面</Link>
-        <p className={styles.link} onClick={changeNameHandle}>user-name: {name}</p>
+        <p className={styles.link} onClick={changeNameHandle}>
+          user-name: {name}
+        </p>
         <p className={styles.link} onClick={changeMoneyHandle}>
           yapi 代理 --- user-model: {money}
         </p>

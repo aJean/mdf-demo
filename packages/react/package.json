@@ -38,7 +38,7 @@
     ]
   },
   "dependencies": {
-    "@mdfjs/react": "^0.1.9",
+    "@mdfjs/react": "0.0.0",
     "@medlinker/fundamental": "^0.2.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
