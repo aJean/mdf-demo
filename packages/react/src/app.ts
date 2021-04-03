@@ -7,7 +7,7 @@ import { whoami } from '@/qy.history';
  */
 
 export default {
-  // config 只覆盖应用插件
+  // 这里的 args 只覆盖应用插件 config
   beforeRender(...args: any) {
     console.log('参数哦：', args);
   },
