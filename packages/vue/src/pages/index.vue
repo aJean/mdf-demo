@@ -15,17 +15,19 @@ import { defineComponent, ref } from 'vue';
 import { RouterLink } from 'vue-router';
 import ProvideFeatureDecisions from '@/components/ProvideFeatureDecisions.vue';
 import WidgetVisitors from '@/components/WidgetVisitors.vue';
+import request from '@/api/request';
 
 export default defineComponent({
   components: {
     ProvideFeatureDecisions,
     WidgetVisitors,
   },
+  
   setup() {
     const value = ref(0);
 
     const handleClick = function () {
-      alert('你好你好你好');
+      request.get('/platform/checkApp');
     };
 
     return {
