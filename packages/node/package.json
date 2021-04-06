@@ -2,7 +2,7 @@
   "name": "mdf-node",
   "mdf-mode": "node",
   "version": "0.0.0",
-  "description": "mdfjs node container",
+  "description": "mdfjs node 开发模板",
   "main": "index.js",
   "scripts": {
     "mdf": "./node_modules/mdfjs/packages/mdf/bin/bootstrap.js",

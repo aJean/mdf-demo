@@ -1,7 +1,7 @@
 {
   "name": "mdf-demo",
   "version": "0.0.0",
-  "description": "mdfjs web demo",
+  "description": "mdf react 开发模板",
   "main": "index.js",
   "files": [
     "src"

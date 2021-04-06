@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "mdf": "./node_modules/mdfjs/packages/mdf/bin/bootstrap.js",
+    "cc": "./node_modules/mdfjs/packages/create-mdfjs/bin/bootstrap.js",
     "build": "MDF_ENV=prod yarn mdf build",
     "dev": "MDF_ENV=dev yarn mdf dev vue",
     "react": "yarn mdf create"
