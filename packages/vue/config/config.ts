@@ -25,4 +25,13 @@ export default defineConfig({
   workServer: {
     proxy: true,
   },
+
+  vconsole: {
+    enable: false,
+  },
+
+  // 响应式方案
+  rem: {
+    enable: true,
+  },
 });

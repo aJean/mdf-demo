@@ -13,7 +13,7 @@ export default defineConfig({
   // 工程配置
   project: {
     type: 'web',
-    framework: 'dva'
+    framework: 'dva',
   },
 
   history: {
@@ -42,35 +42,8 @@ export default defineConfig({
     enable: false,
   },
 
-  // 响应式方案
+  // 响应式方案, pc 可以关闭
   rem: {
-    enable: true,
-  },
-
-  // 统计
-  growingio: {
-    enable: MDF_ENV === 'prod',
-    // growingio 的 key
-    key: 'ad6251cfbfcc4d7c',
-    // 是否启用 hash 路由
-    hashtag: true,
-    // debug 模式
-    debug: false,
-  },
-
-  // @todo pwa
-  serviceWorker: {
     enable: false,
-  },
-
-  // @todo 启动屏
-  splash: {
-    enable: false,
-    autoClose: true,
-    style: '',
-    img: {
-      src: '/logo.png',
-      width: '50%',
-    },
   },
 });

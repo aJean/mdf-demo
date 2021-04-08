@@ -14,7 +14,7 @@ export default defineConfig({
   sentry: {
     enable: false,
     // dsn配置,
-    dsn: 'https://2c4f83282da6474a8ad49097f1842991@sentry-int.medlinker.com/24',
+    dsn: 'https://2c4f83282da6474a8ad49097f1842991@sentry-int.mdf.com/11',
     // 路径
     urlPrefix: [''],
   },
