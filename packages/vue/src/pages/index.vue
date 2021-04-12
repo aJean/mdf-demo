@@ -28,7 +28,7 @@ export default defineComponent({
 
     const handleClick = function () {
       this.showLoading('测试 loading 插件');
-      request.get('/platform/checkApp').finally(() => this.hideLoading());
+      request.get('/platform/checkApp').then(res => console.log(res)).finally(() => this.hideLoading());
     };
 
     return {
