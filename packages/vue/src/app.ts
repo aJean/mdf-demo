@@ -1,4 +1,4 @@
-import loadToast from './components/loadToast';
+import loadToast from './plugins/loadToast';
 
 /**
  * @file 项目配置

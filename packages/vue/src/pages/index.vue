@@ -22,13 +22,13 @@ export default defineComponent({
     ProvideFeatureDecisions,
     WidgetVisitors,
   },
-  
+
   setup() {
     const value = ref(0);
 
     const handleClick = function () {
       this.showLoading('测试 loading 插件');
-      request.get('/platform/checkApp');
+      request.get('/platform/checkApp').finally(() => this.hideLoading());
     };
 
     return {
