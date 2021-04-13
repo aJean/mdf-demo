@@ -33,6 +33,6 @@ export default defineConfig({
 
   // 响应式方案
   rem: {
-    enable: true,
+    enable: false,
   },
 });

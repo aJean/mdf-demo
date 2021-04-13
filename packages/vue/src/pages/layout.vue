@@ -2,11 +2,12 @@
   <ProvideFeature>
     <p :class="$style.line"><button @click="handleClick">点我好吗，好的</button></p>
     <ul>
-      <li :class="$style.li"><RouterLink to="/home/b">跳转到 home</RouterLink></li>
+      <li :class="$style.li"><RouterLink to="/home">跳转到 home</RouterLink></li>
       <li><RouterLink to="/counter">跳转到 counter</RouterLink></li>
       <li><RouterLink to="/about">跳转到 about</RouterLink></li>
     </ul>
   </ProvideFeature>
+  <router-view />
 </template>
 
 <script lang="ts">
@@ -43,7 +44,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" module>
-@import './index.scss';
+@import '@/styles/common.scss';
 
 .line {
   padding: 20px;
