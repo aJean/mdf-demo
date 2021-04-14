@@ -31,7 +31,7 @@ export default defineComponent({
       this.showLoading('测试 loading 插件');
       request
         .get('/platform/checkApp')
-        .then((res) => console.log(res))
+        .then((res) => console.log(11))
         .finally(() => this.hideLoading());
     };
 
