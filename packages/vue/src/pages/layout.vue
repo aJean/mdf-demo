@@ -22,6 +22,7 @@ export default defineComponent({
 
   mounted() {
     console.log(this['$style']);
+    throw new Error('test sentry');
   },
 
   setup() {

@@ -1,3 +1,5 @@
+import * as Sentry from '@sentry/browser';
+import * as Integrations from '@sentry/integrations';
 import loadToast from './plugins/loadToast';
 
 /**
@@ -9,5 +11,11 @@ export default {
   beforeRender(config: any, app: any) {
     app.use(loadToast);
     console.log(`应用插件配置【${process.env.PRO_NAME}】`, config);
+
+    Sentry.init({
+      dsn: config.sentry.dsn,
+      // @ts-ignore
+      integrations: [new Integrations.Vue({app, attachProps: true})],
+    });
   },
 };
