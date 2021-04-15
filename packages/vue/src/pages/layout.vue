@@ -30,8 +30,8 @@ export default defineComponent({
     const handleClick = function () {
       this.showLoading('测试 loading 插件');
       request
-        .get('/platform/checkApp')
-        .then((res) => console.log(11))
+        .get('/platform/checkApp', {headers: {Authorization: 1}})
+        .then((res) => console.log(res))
         .finally(() => this.hideLoading());
     };
 

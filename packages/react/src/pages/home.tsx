@@ -38,7 +38,7 @@ const Home = function (props: Props) {
       <div>
         <Link to="/foo">跳转到 foo 页面</Link>
         <p className={styles.link} onClick={yapiRequest}>
-          完全匹配代理: {name}
+          完全匹配 yapi 代理: {name}
         </p>
         <p className={styles.link} onClick={checkApp}>
           默认 server 代理 --- checkApp: {money}
