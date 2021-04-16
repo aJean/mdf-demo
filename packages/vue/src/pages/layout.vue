@@ -56,3 +56,11 @@ export default defineComponent({
   background: rgb(189, 167, 167);
 }
 </style>
+
+<router>
+{
+  meta: {
+    test: 1
+  },
+}
+</router>

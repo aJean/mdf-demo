@@ -16,8 +16,11 @@ export default {
       dsn: config.sentry.dsn,
       environment: 'dev',
       // @ts-ignore
-      integrations: [new Integrations.Vue({app, attachProps: true})],
-      
+      integrations: [new Integrations.Vue({ app, attachProps: true })],
+    });
+
+    app.router.beforeEach(function (to, from, next) {
+      console.log('全局守卫');
     });
   },
 };
