@@ -22,6 +22,7 @@ export default defineComponent({
 
   mounted() {
     console.log(this['$style']);
+    request.get('/qy/yapi').then((res) => console.log(res));
   },
 
   setup() {
