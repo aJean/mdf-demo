@@ -1,5 +1,4 @@
 {
-  "enable": true,
   "server": "https://fe.ai101test.com",
   "paths": {
     "/qy/yapi": "http://yapi.ai101test.com/mock/11/v1/api/teach/codegen",
