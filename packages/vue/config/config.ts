@@ -40,7 +40,7 @@ export default defineConfig({
   // 异常收集
   sentry: {
     enable: Boolean(MDF_ENV === 'prod'),
-    dsn: 'http://0a81c3acc6764e4fae5eabbf127238a1@8.140.126.5:9000/2',
+    dsn: 'https://0a81c3acc6764e4fae5eabbf127238a1@sentry.ai101test.com/2',
     org: 'sentry',
     project: 'ugc-panel',
   },
