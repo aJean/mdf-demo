@@ -1,4 +1,4 @@
-import { Global, Module, NestModule } from '@nestjs/common';
+import { Global, Module, NestModule } from '@mdfjs/node';
 import MdfModule from './mdf/mdf.module';
 
 /**

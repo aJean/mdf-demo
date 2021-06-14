@@ -1,4 +1,4 @@
-import { Module, HttpModule } from '@nestjs/common';
+import { Module, HttpModule } from '@mdfjs/node';
 import MdfController from './mdf.controller';
 import MdfService from './mdf.service';
 

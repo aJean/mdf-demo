@@ -33,21 +33,18 @@
   "license": "MIT",
   "dependencies": {
     "@mdfjs/node": "0.0.0",
-    "@nestjs/common": "^7.6.7",
-    "@nestjs/core": "^7.6.7",
-    "@nestjs/platform-express": "^7.6.7",
     "dayjs": "^1.10.4",
     "react": "^17.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.6.3"
   },
   "devDependencies": {
-    "@types/react": "^17.0.0",
-    "core-js": "3.7.0",
-    "regenerator-runtime": "0.13.7",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
+    "@types/react": "^17.0.0",
+    "core-js": "3.7.0",
     "husky": "^4.2.3",
-    "lint-staged": "^10.0.9"
+    "lint-staged": "^10.0.9",
+    "regenerator-runtime": "0.13.7"
   }
 }

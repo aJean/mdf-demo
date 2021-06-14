@@ -1,4 +1,4 @@
-import { Injectable, HttpService } from '@nestjs/common';
+import { Injectable, HttpService } from '@mdfjs/node';
 
 @Injectable()
 export default class MdfService {

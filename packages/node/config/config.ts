@@ -10,10 +10,10 @@ export default defineConfig({
     APP_AUTHOR: 'qy',
   },
 
-  // fundamental | dva
   project: {
     type: 'hybrid',
     framework: 'dva',
+    useLogger: false,
     // persist: true, 持久化 redux
   },
 
