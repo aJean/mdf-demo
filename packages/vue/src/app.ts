@@ -15,8 +15,7 @@ export default {
     Sentry.init({
       dsn: config.sentry.dsn,
       environment: 'dev',
-      // @ts-ignore
-      integrations: [new Integrations.Vue({ app, attachProps: true })],
+      integrations: [new Integrations.Vue({ app, attachProps: true } as any)],
     });
 
     app.router.beforeEach(function (to, from, next) {
