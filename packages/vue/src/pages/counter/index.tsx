@@ -13,7 +13,7 @@ export default defineComponent({
     return () => {
       return (
         <>
-          <h1>测试tsx文件导入vue和tsx文件</h1>
+          <h1>测试tsx文件导入 vue 和 tsx 文件</h1>
           <TsxComponent></TsxComponent>
           <VueComponent onClickHandle={add}></VueComponent>
           <FuncComponent></FuncComponent>
