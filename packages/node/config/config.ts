@@ -27,6 +27,8 @@ export default defineConfig({
     port: 3000,
   },
 
+  workServer: {},
+
   chainWebpack(chain: any) {},
 
   vconsole: {

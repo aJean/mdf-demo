@@ -1,14 +1,8 @@
-import { Global, Module, NestModule } from '@mdfjs/node';
-import MdfModule from './mdf/mdf.module';
+import { Helper } from '@mdfjs/node';
+import OneModule from './one/one.module';
 
 /**
  * @file 启动模块
  */
 
-@Global()
-@Module({
-  imports: [MdfModule],
-})
-export default class AppModule implements NestModule {
-  configure(): any {}
-}
+export default Helper.createAppModule({ imports: [OneModule] });
