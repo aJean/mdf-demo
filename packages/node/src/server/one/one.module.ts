@@ -3,7 +3,7 @@ import OneController from './one.controller';
 import OneService from './one.service';
 
 /**
- * @file mdf module
+ * @file one module
  */
 
 @Module({

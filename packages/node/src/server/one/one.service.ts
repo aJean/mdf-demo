@@ -1,21 +1,27 @@
-import { Injectable, HttpService } from '@mdfjs/node';
+import { Injectable, HttpService, AppService, SharedService } from '@mdfjs/node';
+
+/**
+ * @file 一个普通 service 的例子
+ */
 
 @Injectable()
-export default class MdfService {
-  constructor(private readonly httpService: HttpService) {}
+export default class OneService extends AppService {
+  constructor(protected shared: SharedService) {
+    super('one', shared);
+  }
 
   async getData(): Promise<any> {
-    const data = await this.httpService.get(
-      'http://buriedpoint-interface-qa.medlinker.com/v1/buried/point',
-    );
+    const data = await this.send({
+      url: 'http://buriedpoint-interface-qa.medlinker.com/v1/buried/point',
+    });
 
     return data
       .toPromise()
       .then((res) => {
-        return { code: 0, message: '完事了哇哦' };
+        return this.pipeMock(null, 200, '都被你给懂完了');
       })
       .catch((e) => {
-        return { code: -1, message: '出错了哇哦' };
+        return this.pipeMock(null, 200, '你把服务器给整不会了');
       });
   }
 }
