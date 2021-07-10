@@ -1,4 +1,4 @@
-import { Injectable, HttpService, AppService, SharedService } from '@mdfjs/node';
+import { Injectable, AppService, SharedService } from '@mdfjs/node';
 
 /**
  * @file 一个普通 service 的例子
