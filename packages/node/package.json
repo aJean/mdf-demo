@@ -11,9 +11,6 @@
     "dev:server": "MDF_ENV=dev yarn mdf dev --node",
     "lint": "yarn mdf lint"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
   "lint-staged": {
     "*.{ts,tsx}": [
       "yarn lint --es"
