@@ -18,10 +18,10 @@ export default class OneService extends AppService {
     return data
       .toPromise()
       .then((res) => {
-        return this.pipeMock(null, 200, '都被你给懂完了');
+        return this.pipeMock({ msg: '都被你给懂完了' });
       })
       .catch((e) => {
-        return this.pipeMock(null, 200, '你把服务器给整不会了');
+        return this.pipeMock({ msg: '你把服务器给整不会了' });
       });
   }
 }

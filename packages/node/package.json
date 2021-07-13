@@ -9,7 +9,7 @@
     "build": "MDF_ENV=prod yarn mdf build",
     "dev": "MDF_ENV=dev yarn mdf dev",
     "dev:server": "MDF_ENV=dev yarn mdf dev --node",
-    "lint": "yarn mdf lint --es"
+    "lint": "yarn mdf lint"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -22,7 +22,7 @@
       "yarn mdf lint --css"
     ],
     "*.scss": [
-      "yarn mdf lint --sass"
+      "yarn mdf lint --scss"
     ],
     "*.less": [
       "yarn mdf lint --less"
