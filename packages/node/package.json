@@ -16,16 +16,16 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "yarn mdf lint --es"
+      "yarn lint --es"
     ],
     "*.css": [
-      "yarn mdf lint --css"
+      "yarn lint --css"
     ],
     "*.scss": [
-      "yarn mdf lint --scss"
+      "yarn lint --scss"
     ],
     "*.less": [
-      "yarn mdf lint --less"
+      "yarn lint --less"
     ]
   },
   "repository": "https://github.com/aJean/mdf-demo.git",
@@ -43,8 +43,8 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@types/react": "^17.0.0",
     "core-js": "3.7.0",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.9",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.0.1",
     "regenerator-runtime": "0.13.7"
   }
 }
