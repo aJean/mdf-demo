@@ -33,6 +33,7 @@
   "license": "MIT",
   "dependencies": {
     "dayjs": "^1.10.4",
+    "husky": "^7.0.1",
     "react": "^17.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.6.3"
@@ -42,7 +43,6 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@types/react": "^17.0.0",
     "core-js": "3.7.0",
-    "husky": "^7.0.1",
     "lint-staged": "^11.0.1",
     "regenerator-runtime": "0.13.7"
   }
