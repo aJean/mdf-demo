@@ -32,7 +32,6 @@
   "author": "qy",
   "license": "MIT",
   "dependencies": {
-    "@mdfjs/node": "0.0.0",
     "dayjs": "^1.10.4",
     "react": "^17.0.1",
     "reflect-metadata": "^0.1.13",
