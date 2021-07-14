@@ -11,20 +11,6 @@
     "dev:server": "MDF_ENV=dev yarn mdf dev --node",
     "lint": "yarn mdf lint"
   },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "yarn lint --es"
-    ],
-    "*.css": [
-      "yarn lint --css"
-    ],
-    "*.scss": [
-      "yarn lint --scss"
-    ],
-    "*.less": [
-      "yarn lint --less"
-    ]
-  },
   "repository": "https://github.com/aJean/mdf-demo.git",
   "author": "qy",
   "license": "MIT",
