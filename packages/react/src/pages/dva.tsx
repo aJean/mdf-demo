@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react';
-import { plugin, PluginType, Link, connect, ConnectProps } from 'mdf';
-import styles from './home.scss?module';
+import { plugin, PluginType, Link, connect, ConnectedProps } from 'mdf';
+import styles from './dva.scss?module';
 import './normal.scss';
 
 /**
- * @file user home page
- * @path /
+ * @file dva page
+ * @path /dva
  */
 
 const mapStateToProps = ({ proxy }: any) => proxy;
 
-type Props = ReturnType<typeof mapStateToProps> & ConnectProps;
+type Props = ReturnType<typeof mapStateToProps> & ConnectedProps;
 
-const Home = function (props: Props) {
+const DvaView = function (props: Props) {
   const { name, money, beauty, dispatch } = props;
 
   // 触发运行时插件的执行
@@ -51,4 +51,4 @@ const Home = function (props: Props) {
   );
 };
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(DvaView);

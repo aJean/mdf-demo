@@ -13,7 +13,7 @@ export default defineConfig({
   // 工程配置
   project: {
     type: 'web',
-    framework: 'dva',
+    framework: 'rematch',
   },
 
   history: {
