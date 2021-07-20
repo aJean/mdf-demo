@@ -1,26 +1,34 @@
-import { createModel, RootModel } from 'mdf';
+import { createModel } from 'mdf';
 
 /**
  * @file 测试 rematch model
  */
 
-export default createModel<RootModel>()({
+type PlayersState = {
+  players: number[];
+};
+
+export default createModel({
   state: {
     players: [],
-  },
+  } as PlayersState,
 
   reducers: {
-    SET_PLAYERS: (state: any, players: number[]) => {
-      return {
-        ...state,
-        players,
-      };
+    /**
+     * use immer
+     */
+    SET_PLAYERS: (state: PlayersState, players: number[]) => {
+      state.players = players;
+      return state;
     },
   },
+  
   effects: (dispatch) => {
+    const { rematch_model } = dispatch;
+    
     return {
       async setPlayers(payload: number[]): Promise<any> {
-        dispatch.rematch_model.SET_PLAYERS(payload);
+        rematch_model.SET_PLAYERS(payload);
       },
     };
   },
