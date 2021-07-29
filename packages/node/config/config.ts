@@ -13,8 +13,12 @@ export default defineConfig({
   project: {
     type: 'hybrid',
     framework: 'dva',
-    useLogger: false,
     // persist: true, 持久化 redux
+  },
+
+  node: {
+    uselog: false,
+    timeout: 300000,
   },
 
   history: {
@@ -23,17 +27,11 @@ export default defineConfig({
 
   publicPath: '/',
 
-  devServer: {
-    port: 3000,
-  },
+  devServer: { port: 3000 },
 
   workServer: {},
 
-  chainWebpack(chain: any) {},
-
-  vconsole: {
-    enable: false,
-  },
+  vconsole: { enable: false },
 
   // 响应式方案
   rem: {
