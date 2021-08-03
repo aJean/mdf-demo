@@ -8,7 +8,7 @@
     "mdf": "./node_modules/mdfjs/packages/mdf/bin/bootstrap.js",
     "build": "MDF_ENV=prod yarn mdf build",
     "dev": "MDF_ENV=dev yarn mdf dev",
-    "dev:server": "MDF_ENV=dev yarn mdf dev --node",
+    "server": "MDF_ENV=dev yarn mdf dev --node",
     "lint": "./node_modules/mdfjs/packages/mdf/bin/bootstrap.js lint"
   },
   "repository": "https://github.com/aJean/mdf-demo.git",

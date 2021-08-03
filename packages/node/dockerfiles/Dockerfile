@@ -16,7 +16,7 @@ RUN chmod +x /bin/start.sh
 
 COPY dockerfiles/app.conf .
 
-EXPOSE 80 9000
+EXPOSE 80
 
 STOPSIGNAL SIGQUIT
 
