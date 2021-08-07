@@ -1,6 +1,6 @@
 {
   "name": "mdf-demo-vue",
-  "version": "0.0.0",
+  "version": "1.0.5",
   "description": "mdf vue 开发模板",
   "main": "index.js",
   "scripts": {
