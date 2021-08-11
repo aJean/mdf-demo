@@ -16,9 +16,10 @@
   "author": "qy",
   "license": "MIT",
   "dependencies": {
-    "@mdfjs/node": "0",
+    "@mdfjs/node": "0.0.1",
     "dayjs": "^1.10.4",
     "husky": "^7.0.1",
+    "prom-client": "^13.2.0",
     "react": "^17.0.1",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.6.3"
