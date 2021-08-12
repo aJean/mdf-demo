@@ -10,18 +10,23 @@ export default class OneService extends AppService {
     super('one', shared);
   }
 
-  async getData(): Promise<any> {
-    const data = await this.send({
-      url: 'http://buriedpoint-interface-qa.medlinker.com/v1/buried/point',
+  /**
+   * 正常网络请求
+   */
+  getData() {
+    return this.send({
+      url: ' http://8.131.68.38:9102/v1/api/cm/question/explains/unique/get?id=18083',
     });
+  }
 
-    return data
-      .toPromise()
-      .then((res) => {
-        return this.pipeMock({ msg: '都被你给懂完了' });
-      })
-      .catch((e) => {
-        return this.pipeMock({ msg: '你把服务器给整不会了' });
-      });
+  /**
+   * 延时 1s 执行
+   */
+  checkData(): any {
+    const res = this.pipeMock({ data: '假的吧' });
+
+    return new Promise(function (resolve) {
+      setTimeout(() => resolve(res), 1000);
+    });
   }
 }
