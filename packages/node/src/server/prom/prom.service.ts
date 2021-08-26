@@ -1,5 +1,5 @@
 import { register } from 'prom-client';
-import { Injectable, AppService, SharedService } from '@mdfjs/node';
+import { Injectable, AppService } from '@mdfjs/node';
 
 /**
  * @file prom service
@@ -7,8 +7,8 @@ import { Injectable, AppService, SharedService } from '@mdfjs/node';
 
 @Injectable()
 export default class PromService extends AppService {
-  constructor(protected shared: SharedService) {
-    super('prom', shared);
+  constructor() {
+    super('prom');
   }
 
   /**

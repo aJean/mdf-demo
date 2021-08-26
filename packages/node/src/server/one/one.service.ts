@@ -1,4 +1,4 @@
-import { Injectable, AppService, SharedService } from '@mdfjs/node';
+import { Injectable, AppService } from '@mdfjs/node';
 
 /**
  * @file 一个普通 service 的例子
@@ -6,14 +6,14 @@ import { Injectable, AppService, SharedService } from '@mdfjs/node';
 
 @Injectable()
 export default class OneService extends AppService {
-  constructor(protected shared: SharedService) {
-    super('one', shared);
+  constructor() {
+    super('one');
   }
 
   /**
    * 正常网络请求
    */
-  getData() {
+  getData(): any {
     return this.send({
       url: ' http://8.131.68.38:9102/v1/api/cm/question/explains/unique/get?id=18083',
     });

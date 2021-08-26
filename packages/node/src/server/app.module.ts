@@ -15,10 +15,9 @@ export default Helper.createAppModule({
    * 自定义 http 异常处理
    */
   handleHttpError(err, req, res) {
-    console.log(err);
     res.send({
       code: 200,
-      msg: 'hahah',
+      msg: err.message,
     });
   },
 });
