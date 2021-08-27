@@ -10,7 +10,7 @@ import PromMiddleware from './prom.middleware';
 export default Helper.createAppModule({
   imports: [OneModule, PromModule],
   middlewares: [PromMiddleware],
-  
+
   /**
    * 自定义 http 异常处理
    */
@@ -18,6 +18,7 @@ export default Helper.createAppModule({
     res.send({
       code: 200,
       msg: err.message,
+      from: 'mdf-node',
     });
   },
 });
