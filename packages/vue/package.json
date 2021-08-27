@@ -4,7 +4,7 @@
   "description": "mdf vue 开发模板",
   "main": "index.js",
   "scripts": {
-    "mdf": "./node_modules/mdfjs/packages/mdf/bin/bootstrap.js",
+    "mdf": "node --trace-deprecation ./node_modules/mdfjs/packages/mdf/bin/bootstrap.js",
     "cc": "./node_modules/mdfjs/packages/create-mdfjs/bin/bootstrap.js",
     "build": "MDF_ENV=prod yarn mdf build",
     "dev": "MDF_ENV=dev yarn mdf dev",
@@ -22,7 +22,7 @@
     "@sentry/integrations": "^6.2.5",
     "element3": "^0.0.35",
     "typescript": "^4.1.3",
-    "vue": "^3.0.4",
+    "vue": "3.2.6",
     "vue-router": "^4.0.1"
   },
   "devDependencies": {}
