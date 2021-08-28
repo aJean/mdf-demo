@@ -1,13 +1,16 @@
 <script lang="tsx">
 import { defineComponent, useCssModule } from 'vue';
 
+type HandleType = () => void;
+
 export default defineComponent({
   props: {
-    onClickHandle: Function
+    clickHandle: Function,
   },
+
   setup(props) {
-    const onClickHandle: any = props.onClickHandle;
-    const $style = useCssModule()
+    const onClickHandle: any = props.clickHandle;
+    const $style = useCssModule();
     console.log($style);
 
     return () => {

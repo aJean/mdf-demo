@@ -1,9 +1,15 @@
-import { ComponentCustomProperties } from 'vue'
+import { ComponentCustomProperties } from 'vue';
 
 declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
     $style: any;
   }
+}
+
+declare module '*.vue' {
+  import type { defineComponent } from 'vue';
+  const component: defineComponent<{}, {}, any>;
+  export default component;
 }
 
 declare module '*.css?module' {
