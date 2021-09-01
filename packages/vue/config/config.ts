@@ -7,7 +7,7 @@ import { defineConfig } from 'mdf';
 const MDF_ENV = process.env.MDF_ENV;
 export default defineConfig({
   history: {
-    type: 'hash',
+    type: 'browser',
   },
 
   publicPath: '/',
