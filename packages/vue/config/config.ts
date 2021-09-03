@@ -15,7 +15,8 @@ export default defineConfig({
   // 工程配置
   project: {
     type: 'web',
-    framework: 'vuex',
+    framework: 'vue',
+    smp: true,
   },
 
   devServer: {

@@ -16,14 +16,21 @@
     "url": "https://github.com/aJean/mdf-demo.git"
   },
   "dependencies": {
-    "@mdfjs/vue": "0.0.0",
+    "@mdfjs/vue": "0",
     "@sentry/browser": "^6.2.5",
     "@sentry/integrations": "^6.2.5",
-    "element3": "^0.0.35",
     "vue": "3.2.6",
     "vue-router": "4.0.11"
   },
   "devDependencies": {
-    "@types/node": "^16.7.4"
+    "@mdfjs/vue": "0",
+    "@types/core-js": "2.5.4",
+    "@types/node": "^16.7.4",
+    "@types/regenerator-runtime": "0.13.0",
+    "core-js": "3.7.0",
+    "regenerator-runtime": "0.13.7"
+  },
+  "resolutions": {
+    "vue": "3.2.6"
   }
 }

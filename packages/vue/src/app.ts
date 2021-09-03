@@ -18,7 +18,7 @@ export default {
       integrations: [new Integrations.Vue({ app, attachProps: true } as any)],
     });
 
-    app.router.beforeEach(function (to, from, next) {
+    app.router.beforeEach(function (to: string, from: string, next: Function) {
       console.log('全局守卫');
       next();
     });

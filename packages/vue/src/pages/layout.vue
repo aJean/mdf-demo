@@ -1,6 +1,9 @@
 <template>
   <ProvideFeature>
-    <p :class="$style.line"><button @click="handleClick">点我好吗，好的</button></p>
+    <p :class="$style.line">
+      <img src="../assets/image/logo.png" />
+      <button @click="handleClick">点我好吗，好的12</button>
+    </p>
     <ul>
       <li :class="$style.li"><RouterLink to="/home">跳转到 home</RouterLink></li>
       <li><RouterLink to="/counter">跳转到 counter</RouterLink></li>
