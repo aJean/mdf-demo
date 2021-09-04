@@ -1,4 +1,4 @@
-import { Injectable, AppService } from '@mdfjs/node';
+import { Injectable, AppService, Request } from '@mdfjs/node';
 
 /**
  * @file 一个普通 service 的例子
@@ -16,6 +16,13 @@ export default class OneService extends AppService {
   getData(): any {
     return this.send({
       url: ' http://8.131.68.38:9102/v1/api/cm/question/explains/unique/get?id=18083',
+    });
+  }
+
+  getPreviewLadder(id: number, headers: any): any {
+    return this.rpc({
+      path: `http://8.131.68.38:9102/v1/api/cm/question/explain?id=${id}`,
+      headers,
     });
   }
 

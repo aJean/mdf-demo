@@ -1,4 +1,4 @@
-import { Controller, Get, Header, Query } from '@mdfjs/node';
+import { Controller, Get, Headers, Query } from '@mdfjs/node';
 import OneService from './one.service';
 
 /**
@@ -17,5 +17,13 @@ export default class OneController {
   @Get('/check')
   check() {
     return this.server.checkData();
+  }
+
+  /**
+   * headers 自动下发
+   */
+  @Get('/testHeaders')
+  testHeaders(@Headers() header: any) {
+    return this.server.getPreviewLadder(39636, header);
   }
 }
