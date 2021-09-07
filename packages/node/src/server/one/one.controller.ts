@@ -26,4 +26,9 @@ export default class OneController {
   testHeaders(@Headers() header: any) {
     return this.server.getPreviewLadder(39636, header);
   }
+
+  @Get('/device')
+  sendDevice(@Headers() header: any) {
+    return this.server.sendDevice(header);
+  }
 }

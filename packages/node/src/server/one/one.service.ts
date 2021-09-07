@@ -1,4 +1,4 @@
-import { Injectable, AppService, Request } from '@mdfjs/node';
+import { Injectable, AppService } from '@mdfjs/node';
 
 /**
  * @file 一个普通 service 的例子
@@ -34,6 +34,18 @@ export default class OneService extends AppService {
 
     return new Promise(function (resolve) {
       setTimeout(() => resolve(res), 1000);
+    });
+  }
+
+  /**
+   * 测试设备信息
+   */
+  sendDevice(headers: any): any {
+    headers.taltoken = 'tal173ioVa4mu6y2qjWFsYqZMbR8528oe8aQDKcZ5Y4TZDAH945lb7zqSnOFISTs59D7NfRYtOT4Ggmk0HwM49LUeeTxJAT91dwyvZsftnjYqLbi29r8oXgeZ7OlLKTPxwLU03_9R3DKnu3qMC7mmVGv13sWwtWhg6FKz-4rolb4YSCdMf8DHaIo3iol0qmpcpe2wtFMw';
+
+    return this.rpc({
+      path: `http://8.131.68.38:9043/v1/api/task/getTaskList`,
+      headers,
     });
   }
 }
