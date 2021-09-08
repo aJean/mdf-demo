@@ -22,7 +22,7 @@ function productLoadingDom(text: String) {
     `;
 }
 
-
+123
 export default {
   install(Vue: any, options: any) {
     Vue.config.globalProperties.showLoading = function (text: String) {
