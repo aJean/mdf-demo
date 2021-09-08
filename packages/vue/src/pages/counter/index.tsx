@@ -2,7 +2,7 @@ import { defineComponent } from 'vue';
 import TsxComponent from './components/TsxComponent';
 import VueComponent from './components/VueComponent.vue';
 
-const FuncComponent = () => <div>这是函数组件11</div>;
+const FuncComponent = () => <div>这是函数组件</div>;
 
 export default defineComponent({
   setup() {
