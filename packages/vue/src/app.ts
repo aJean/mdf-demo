@@ -19,7 +19,7 @@ export default {
     });
 
     app.router.beforeEach(function (to: string, from: string, next: Function) {
-      console.log('全局守卫1');
+      console.log('全局守卫');
       next();
     });
   },
