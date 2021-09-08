@@ -6,7 +6,6 @@
     </p>
     <ul>
       <li :class="$style.li"><RouterLink to="/home">跳转到 home</RouterLink></li>
-      <li><RouterLink to="/counter">跳转到 counter</RouterLink></li>
       <li><RouterLink to="/about">跳转到 about</RouterLink></li>
     </ul>
   </ProvideFeature>
