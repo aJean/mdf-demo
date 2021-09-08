@@ -23,19 +23,18 @@
     "*.less": "yarn mdf lint --less"
   },
   "dependencies": {
-    "@mdfjs/vue": "0",
     "@sentry/browser": "^6.2.5",
     "@sentry/integrations": "^6.2.5",
     "vue": "3.2.6",
     "vue-router": "4.0.11"
   },
   "devDependencies": {
-    "@mdfjs/vue": "0",
     "@types/core-js": "2.5.4",
     "@types/node": "^16.7.4",
     "@types/regenerator-runtime": "0.13.0",
     "core-js": "3.7.0",
-    "regenerator-runtime": "0.13.7"
+    "regenerator-runtime": "0.13.7",
+    "husky": "^7.0.1"
   },
   "resolutions": {
     "vue": "3.2.6"
