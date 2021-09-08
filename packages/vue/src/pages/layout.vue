@@ -29,7 +29,7 @@ export default defineComponent({
   },
 
   setup() {
-    const value = ref(0);
+    const value = ref(1);
 
     const handleClick = function () {
       this.showLoading('测试 loading 插件');
