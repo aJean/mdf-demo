@@ -8,7 +8,7 @@
     "cc": "./node_modules/mdfjs/packages/create-mdfjs/bin/bootstrap.js",
     "build": "MDF_ENV=prod yarn mdf build",
     "dev": "MDF_ENV=dev yarn mdf dev",
-    "prepare": "husky install"
+    "prepare": "cd ../.. && husky install packages/vue/.husky"
   },
   "author": "",
   "license": "MIT",
@@ -33,8 +33,9 @@
     "@types/node": "^16.7.4",
     "@types/regenerator-runtime": "0.13.0",
     "core-js": "3.7.0",
-    "regenerator-runtime": "0.13.7",
-    "husky": "^7.0.1"
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "regenerator-runtime": "0.13.7"
   },
   "resolutions": {
     "vue": "3.2.6"
