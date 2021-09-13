@@ -40,11 +40,9 @@ export default class OneService extends AppService {
   /**
    * 测试设备信息
    */
-  sendDevice(headers: string): any {
+  sendDevice(headers: any): any {
     headers.taltoken = 'tal173ioVa4mu6y2qjWFsYqZMbR8528oe8aQDKcZ5Y4TZDAH945lb7zqSnOFISTs59D7NfRYtOT4Ggmk0HwM49LUeeTxJAT91dwyvZsftnjYqLbi29r8oXgeZ7OlLKTPxwLU03_9R3DKnu3qMC7mmVGv13sWwtWhg6FKz-4rolb4YSCdMf8DHaIo3iol0qmpcpe2wtFMw';
 
-    const d = 1;
-    d = '2';
     return this.rpc({
       path: `http://8.131.68.38:9043/v1/api/task/getTaskList`,
       headers,
