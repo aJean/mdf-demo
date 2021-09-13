@@ -10,6 +10,7 @@
     "dev": "MDF_ENV=dev yarn mdf dev",
     "server": "MDF_ENV=dev yarn mdf dev --node",
     "project": "yarn mdf create",
+    "lint": "yarn mdf lint",
     "prepare": "cd ../.. && husky install packages/node/.husky"
   },
   "repository": "https://github.com/aJean/mdf-demo.git",
