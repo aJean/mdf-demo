@@ -16,7 +16,7 @@
   "author": "qy",
   "license": "MIT",
   "lint-staged": {
-    "*.{ts,vue}": "yarn mdf lint --es",
+    "*.ts": "yarn mdf lint --es",
     "*.css": "yarn mdf lint --css",
     "*.scss": "yarn mdf lint --scss",
     "*.less": "yarn mdf lint --less"
