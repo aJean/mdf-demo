@@ -22,7 +22,6 @@
     "*.less": "yarn mdf lint --less"
   },
   "dependencies": {
-    "@mdfjs/node": "0.0.1",
     "dayjs": "^1.10.4",
     "husky": "^7.0.1",
     "prom-client": "^13.2.0",
