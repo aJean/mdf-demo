@@ -10,11 +10,17 @@
     "dev": "MDF_ENV=dev yarn mdf dev",
     "server": "MDF_ENV=dev yarn mdf dev --node",
     "project": "yarn mdf create",
-    "lint": "./node_modules/mdfjs/packages/mdf/bin/bootstrap.js lint"
+    "prepare": "cd ../.. && husky install packages/node/.husky"
   },
   "repository": "https://github.com/aJean/mdf-demo.git",
   "author": "qy",
   "license": "MIT",
+  "lint-staged": {
+    "*.{ts,vue}": "yarn mdf lint --es",
+    "*.css": "yarn mdf lint --css",
+    "*.scss": "yarn mdf lint --scss",
+    "*.less": "yarn mdf lint --less"
+  },
   "dependencies": {
     "@mdfjs/node": "0.0.1",
     "dayjs": "^1.10.4",
@@ -29,7 +35,8 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@types/react": "^17.0.0",
     "core-js": "3.7.0",
-    "lint-staged": "^11.0.1",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
     "regenerator-runtime": "0.13.7"
   }
 }
