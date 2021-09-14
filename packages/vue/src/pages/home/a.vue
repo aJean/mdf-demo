@@ -30,4 +30,4 @@ export default defineComponent({
     console.log(params);
   },
 }
-</router>hah
+</router>
