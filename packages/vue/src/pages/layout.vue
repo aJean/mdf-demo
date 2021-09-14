@@ -18,15 +18,6 @@ import ProvideFeature from '@/components/feature.vue';
 import request from '@/api/request';
 
 export default defineComponent({
-  components: {
-    ProvideFeature,
-  },
-
-  mounted() {
-    console.log(this['$style']);
-    request.get('/qy/yapi').then((res) => console.log(res));
-  },
-
   setup() {
     const value = ref(1);
 
@@ -42,6 +33,15 @@ export default defineComponent({
       value,
       handleClick,
     };
+  },
+
+  components: {
+    ProvideFeature,
+  },
+
+  mounted() {
+    console.log(this['$style']);
+    request.get('/qy/yapi').then((res) => console.log(res));
   },
 });
 </script>

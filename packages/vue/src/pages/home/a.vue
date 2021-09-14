@@ -8,11 +8,11 @@ export default defineComponent({
   setup() {
     const count = ref(1);
     function add() {
-      count.value = count.value + 1;
+      count.value = Number(count.value) + 1;
     }
     return {
       count,
-      add
+      add,
     };
   },
 });
