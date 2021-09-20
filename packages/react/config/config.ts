@@ -17,7 +17,7 @@ export default defineConfig({
   },
 
   history: {
-    type: 'hash',
+    type: 'browser',
   },
 
   publicPath: '/',
@@ -42,8 +42,15 @@ export default defineConfig({
     enable: false,
   },
 
-  // 响应式方案, pc 可以关闭
+  // 响应式方案
   rem: {
     enable: false,
+  },
+
+  sentry: {
+    enable: false,
+    dsn: 'https://2c4f83282da6474a8ad49097f1842991@sentry-int.mdf.com/11',
+    org: 'sentry',
+    project: 'xxx',
   },
 });

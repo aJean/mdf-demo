@@ -1,18 +1,17 @@
 import React, { useEffect } from 'react';
 import { plugin, PluginType, Link, connect, ConnectedProps } from 'mdf';
-import styles from './dva.scss?module';
-import './normal.scss';
+import styles from './dva.less?module';
+import './normal.less';
 
 /**
- * @file dva page
- * @path /dva
+ * @file 标准 dva demo
  */
 
 const mapStateToProps = ({ proxy }: any) => proxy;
 
 type Props = ReturnType<typeof mapStateToProps> & ConnectedProps;
 
-const DvaView = function (props: Props) {
+function DvaView(props: Props) {
   const { name, money, beauty, dispatch } = props;
 
   // 触发运行时插件的执行
@@ -36,7 +35,7 @@ const DvaView = function (props: Props) {
     <div className={styles.home}>
       <h2>mdf-react 测试代理</h2>
       <div>
-        <Link to="/foo">跳转到 foo 页面</Link>
+        <Link to='/foo'>跳转到 foo 页面</Link>
         <p className={styles.link} onClick={yapiRequest}>
           完全匹配 yapi 代理: {name}
         </p>
@@ -49,6 +48,6 @@ const DvaView = function (props: Props) {
       </div>
     </div>
   );
-};
+}
 
 export default connect(mapStateToProps)(DvaView);
