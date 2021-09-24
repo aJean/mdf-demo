@@ -31,4 +31,9 @@ export default class OneController {
   sendDevice(@Headers() header: any) {
     return this.server.sendDevice(header);
   }
+
+  @Get('/testOA')
+  testOA(@Headers() header: any) {
+    return this.server.apiTestOA(header);
+  }
 }
