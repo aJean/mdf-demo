@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@@/*": [".tmp/*"],
+      "mdf": ["node_modules/mdfjs/packages/mdf"]
+    }
+  },
+  "include": [
+    ".tmp/**/*",
+    "src/**/*",
+    "config/**/*",
+    "plugins/**/*",
+    "typings.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}
