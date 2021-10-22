@@ -17,6 +17,11 @@ export default defineConfig({
     type: 'web',
     framework: 'vue',
     smp: true,
+    // 多入口配置
+    multi: {
+      index: 'pages',
+      other: 'pages-other',
+    },
   },
 
   devServer: {
@@ -25,7 +30,7 @@ export default defineConfig({
 
   // 工作服务器以及需要加载的中间件
   workServer: {
-    port: 9100,
+    port: 9200,
     proxy: true,
   },
 
@@ -41,8 +46,5 @@ export default defineConfig({
   // 异常收集
   sentry: {
     enable: false,
-    dsn: 'https://0a81c3acc6764e4fae5eabbf127238a1@sentry.ai101test.com/2',
-    org: 'sentry',
-    project: 'ugc-panel',
   },
 });

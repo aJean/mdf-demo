@@ -1,13 +1,8 @@
 <template>
   <ProvideFeature>
-    <p :class="$style.line">
-      <img src="../assets/image/logo.png" />
-      <button @click="handleClick">点我好吗，好的12</button>
-    </p>
     <ul>
-      <li><a href="/other">跳转到 other 页面</a></li>
-      <li :class="$style.li"><RouterLink to="/home">进入 home</RouterLink></li>
-      <li><RouterLink to="/about">进入 about</RouterLink></li>
+      <li :class="$style.li"><RouterLink to="/home">跳转到 home</RouterLink></li>
+      <li><RouterLink to="/about">跳转到 about</RouterLink></li>
     </ul>
   </ProvideFeature>
   <router-view />
@@ -26,7 +21,7 @@ export default defineComponent({
       this.showLoading('测试 loading 插件');
       request
         .get('/platform/checkApp', { headers: { Authorization: 1 } })
-        .then((res: any) => console.log(res))
+        .then((res) => console.log(res))
         .finally(() => this.hideLoading());
     };
 
@@ -42,7 +37,7 @@ export default defineComponent({
 
   mounted() {
     console.log(this['$style']);
-    request.get('/qy/yapi').then((res: any) => console.log(res));
+    request.get('/qy/yapi').then((res) => console.log(res));
   },
 });
 </script>
