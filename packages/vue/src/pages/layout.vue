@@ -2,11 +2,11 @@
   <ProvideFeature>
     <p :class="$style.line">
       <img src="../assets/image/logo.png" />
-      <button @click="handleClick">点我好吗，好的12</button>
+      <button @click="handleClick">点我好吗，好的</button>
     </p>
     <ul>
       <li><a href="/other">跳转到 other 页面</a></li>
-      <li :class="$style.li"><RouterLink to="/home">进入 home</RouterLink></li>
+      <li :class="$style.li"><RouterLink to="/home">进入内部 home</RouterLink></li>
       <li><RouterLink to="/about">进入 about</RouterLink></li>
     </ul>
   </ProvideFeature>

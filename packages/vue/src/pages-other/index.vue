@@ -1,8 +1,9 @@
 <template>
+  <h2>MPA 项目 - 2级入口</h2>
   <ProvideFeature>
     <ul>
-      <li :class="$style.li"><RouterLink to="/home">跳转到 home</RouterLink></li>
-      <li><RouterLink to="/about">跳转到 about</RouterLink></li>
+      <li :class="$style.li"><a href="/">跳转到 index</a></li>
+      <li><RouterLink to="/study">内部跳转到 study</RouterLink></li>
     </ul>
   </ProvideFeature>
   <router-view />
@@ -55,11 +56,3 @@ export default defineComponent({
   background: rgb(189, 167, 167);
 }
 </style>
-
-<router>
-{
-  meta: {
-    test: 1
-  },
-}
-</router>
