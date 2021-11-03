@@ -1,7 +1,7 @@
 {
   "server": "https://fe.ai101xuexi-inc.com",
   "paths": {
-    "/qy/yapi": "http://yapi.ai101test.com/mock/11/v1/api/teach/codegen",
+    "/qy/yapi": "http://yapi.ai101xuexi-inc.com/mock/11/v1/api/teach/codegen",
     "/v1": "https://8.131.116.34"
   }
 }
