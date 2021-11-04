@@ -8,7 +8,6 @@
     "mdf": "./node_modules/mdfjs/packages/mdf/bin/bootstrap.js",
     "build": "MDF_ENV=prod yarn mdf build",
     "dev": "MDF_ENV=dev yarn mdf dev",
-    "server": "MDF_ENV=dev yarn mdf dev --node",
     "project": "yarn mdf create",
     "lint": "yarn mdf lint",
     "prepare": "cd ../.. && husky install packages/node/.husky"

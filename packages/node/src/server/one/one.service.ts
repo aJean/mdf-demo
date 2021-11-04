@@ -27,13 +27,16 @@ export default class OneService extends AppService {
   }
 
   /**
-   * 延时 1s 执行
+   * 延时 1s 执行，模拟异常
+   * 自定义异常，无 statusCode
    */
   checkData(): any {
     const res = this.pipeMock({ data: '假的吧' });
 
-    return new Promise(function (resolve) {
-      setTimeout(() => resolve(res), 1000);
+    // throw new Error('haha');
+
+    return new Promise(function (resolve, reject) {
+      setTimeout(() => reject(new Error('出错了')), 1000);
     });
   }
 
