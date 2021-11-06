@@ -36,7 +36,7 @@ export default class OneService extends AppService {
     // throw new Error('haha');
 
     return new Promise(function (resolve, reject) {
-      setTimeout(() => reject(new Error('出错了')), 1000);
+      setTimeout(() => reject(new Error('some mistake')), 1000);
     });
   }
 
