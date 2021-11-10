@@ -15,7 +15,7 @@ export default class OneService extends AppService {
    */
   getData(): any {
     return this.send({
-      url: ' http://8.131.68.38:9102/v1/api/cm/question/explains/unique/get?id=18083',
+      url: 'http://8.131.68.38:9102/v1/api/cm/question/explains/unique/get?id=18083',
     });
   }
 
