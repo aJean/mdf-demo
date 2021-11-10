@@ -21,4 +21,9 @@ export default Helper.createAppModule({
       from: 'mdf-node',
     });
   },
+
+  /**
+   * 自定义日志
+   */
+  handleLog(req, res) {},
 });
