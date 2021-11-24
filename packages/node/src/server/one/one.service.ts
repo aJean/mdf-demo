@@ -62,4 +62,14 @@ export default class OneService extends AppService {
       headers,
     });
   }
+
+  /**
+   * 测试 query
+   */
+  apiTestQuery(data: any): any {
+    return this.rpc({
+      path: `http://8.131.68.38:9043/v1/api/task/getTaskList`,
+      data,
+    });
+  }
 }

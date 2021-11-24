@@ -27,6 +27,11 @@ export default class OneController {
     return this.server.getPreviewLadder(39636, header);
   }
 
+  @Get('/testQuery')
+  testQuery(@Query() query: any) {
+    return this.server.apiTestQuery(query);
+  }
+
   @Get('/device')
   sendDevice(@Headers() header: any) {
     return this.server.sendDevice(header);
